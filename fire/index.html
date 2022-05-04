@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>fire</title>
+    <style type="text/css">
+        /* *{
+            margin:0px;
+        } */
+
+        div {
+            width: 2010px;
+            height: 955px;
+            /* background-image: url(http://pic4.zhimg.com/50/v2-8acbf0bc503e6f6a89b1a805bd46f970_hd.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;*/
+            position:relative;
+            top:0px; left:0px;
+            position:fixed;
+            /* border: 5px solid rgba(183, 183, 183, 0.66) */
+        }
+
+        video {
+            position: fixed;
+            right:0px;bottom:-170px;
+            min-width: 100%;
+            min-height: 100%;
+            width:auto;
+            height:auto;
+            z-index: -999;
+            /*灰色调*/
+            /*-webkit-filter:grayscale(100%)*/
+        }
+
+        table {
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+
+        .b:hover {
+            border-bottom: 1px solid rgb(100, 100, 100);
+        }
+
+        .a:hover {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <h3>亲，请完成以下个人信息</h3>
+                </td>
+            </tr>
+        </table>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>性别</td>
+                    <td>
+                        <lable class="a"><input type="radio" name="性别">男</lable>
+                        <lable class="a"><input type="radio" name="性别">女</lable>
+                    </td>
+                </tr><br />
+                <!-- 性别 -->
+                <tr>
+                    <td>生日</td>
+                    <td>
+                        <select class="a">
+                            <option hidden>--年--</option>
+                            <option>2042</option>
+                            <option>2077</option>
+                        </select>
+                        <select class="a">
+                            <option hidden>--月--</option>
+                            <option>5</option>
+                            <option>1</option>
+                        </select>
+                        <select class="a">
+                            <option hidden>--日--</option>
+                            <option>20</option>
+                            <option>25</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- 生日 -->
+                <tr>
+                    <td>所在地区</td>
+                    <td>
+                        <input type="text" placeholder="国家/省/市" class="a">
+                    </td>
+                </tr>
+                <!-- 所在地区 -->
+                <tr>
+                    <td>婚姻状态</td>
+                    <td>
+                        <input type="radio" name="婚姻状态">
+                        <lable class="b">👦👶👩</lable>
+                        <input type="radio" name="婚姻状态">
+                        <lable class="b">👦/👩</lable>
+                        <input type="radio" name="婚姻状态">
+                        <lable class="b">👬/👭</lable>
+                        <input type="radio" name="婚姻状态">
+                        <leble style="color:green;" class="b">cap</label>
+                    </td>
+                </tr>
+                <!-- 婚姻状态 -->
+                <tr>
+                    <td>学历</td>
+                    <td class="a">
+                        <input type="text" placeholder="当前学历 在校/就业" class="a">
+                    </td>
+                </tr>
+                <!-- 学历 -->
+                <tr>
+                    <td>喜欢的类型&emsp;</td>
+                    <td>
+                        <lable class="a"><input type="checkbox" name="喜欢的东西">傲娇的</lable>
+                        <lable class="a"><input type="checkbox" name="喜欢的东西">爱哭的</lable>
+                        <lable class="a"><input type="checkbox" name="喜欢的东西">同性的</lable>
+                        <lable class="a"><input type="checkbox" name="喜欢的东西">异性的</lable>
+                        <lable class="a"><input type="checkbox" name="喜欢的东西">都喜欢</lable>
+                    </td>
+                </tr>
+                <!-- 喜欢的东西 -->
+                <tr>
+                    <td>自我介绍</td>
+                    <td>
+                        <textarea rows="3" cols="30" placeholder="自我介绍" class="a"></textarea>
+                    </td>
+                </tr>
+                <!-- 自我介绍 -->
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="注册/排队登录" class="a"><br />
+                        <!-- 按钮 -->
+                        <lable class="a"><input type="checkbox">我赞成用户协议及隐私分享条款</lable><br />
+                        <!-- 条款 -->
+                        <a href="https://vdse.bdstatic.com//192d9a98d782d9c74c96f09db9378d93.mp4"
+                            style="color:goldenrod;" target="_blank" class="a">👉我是超级会员，立即登录👈</a><br />
+                        <!-- 超链接 -->
+                        <h2>我承诺</h2>
+                        <!-- h2 -->
+                        <ul>
+                            <li>未满18周岁,私生活丰富</li>
+                            <li>抱着严肃的态度不严肃</li>
+                            <li>真诚地pua另一半</li>
+                        </ul>
+                        <!-- 列表 -->
+                    </td>
+            </table>
+        </form>
+    
+    <video src="https://prod-streaming-video-msn-com.akamaized.net/3f6ca508-598d-4cbd-a3e2-43deea7bc377/b60c553e-9f3f-4164-8850-700a9a73a899.mp4" autoplay muted loop></video>
+    </div>
+</body>
+
+</html>
